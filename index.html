@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+	<title>DestinationH</title>
+</head>
+
+<body>
+<main>
+	<nav>
+				<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<ul  class="top_menu">
+					<li><a href="index.html">Home</a></li>
+ 					<li><a href="locations.html">Locations</a></li>
+  					<li><a href="contact.html">Contact</a></li>
+  					<li><a href="about.html">About</a></li>
+					<li><input class="search" type="text" placeholder="  I'm looking for..."><button class="sButton" type="submit">Search</button></li>
+			</ul>
+	</nav>
+
+		<div class="line2"></div>
+
+		<div class="Header">
+			<img class="imgHeader" src="images\hol_banner.jpg" alt="header">
+		</div>
+		<div class="logo">
+			<h1>DestinationH</h1>
+		</div>
+		<div class="searchHols">
+			<div class="searchSection">
+					<form>
+						<div class="fieldLayout">
+							<label for="Departure">Departure date:</label>
+							<input type="date" id="myDate" value="2021-06-01" /><br />
+							<label for="HolidayType">Type of holiday:</label>
+							<select name="TypeLocation">
+								<option value="blank" selected></option>
+								<option value="City">Beach</option>
+								<option value="City">City</option>
+								<option value="Cultural">Cultural</option>
+								<option value="Exploration">Exploration</option>
+								<option value="Adventure">Adventure</option>
+							</select><br />
+							<label for="Adults">Number of adults:</label>
+							<input type="text" name="Number of adults" />
+						</div>
+						<div class="fieldLayout">
+							<label for="Return">Return date:</label>
+							<input type="date" id="myDate" value="2021-06-02" /><br />
+							<label for="From">Travelling from:</label>
+							<select name="City">
+								<option value="blank" selected></option>
+								<option value="Birmingham">Birmingham</option>
+								<option value="Bristol">Bristol</option>
+								<option value="Derby">Derby</option>
+								<option value="Liverpool">Liverpool</option>
+								<option value="London">London</option>
+								<option value="Manchester">Manchester</option>
+								<option value="Newcastle">Newcastle</option>
+								<option value="Southampton">Southampton</option>
+							</select><br />
+							<label for="Children">Number of children:</label>
+							<input type="text" name="Number of children" />
+						</div>
+						<div class="fieldLayout">
+							<label for="Departure_flexibility">Departure Flexibility:</label>
+							<select name="Dep_Flex_Days">
+								<option value="blank" selected></option>
+								<option value="D+1">+1 day</option>
+								<option value="D+2">+2 days</option>
+								<option value="D+3">+3 days</option>
+								<option value="D+4">+4 days</option>
+								<option value="D+5">+5 days</option>
+								<option value="D-1">-1 day</option>
+								<option value="D-2">-2 days</option>
+								<option value="D-3">-3 days</option>
+								<option value="D-4">-4 days</option>
+								<option value="D-5">-5 days</option>
+							</select><br />
+							<label for="From">Board type:</label>
+							<select name="Board_type">
+								<option value="blank" selected></option>
+								<option value="B&blo">Bed and breakfast</option>
+								<option value="HB">Half-board</option>
+								<option value="FB">Full-board</option>
+								<option value="AI">All-inclusive</option>
+								</select><br />
+								<input type="submit" value="Search" />
+							</div>
+					</form>
+			</div>
+		</div>
+		<div class="mainSection">
+				<div class="midLeftSection">
+					<img class="imgSmll" src="images\beaches.jpg" alt="Beach holidays" />
+					<h3>Pristine Beaches</h3>
+					<p>If you're longing for a beach holiday, we've got some stunning recommendations.</p>
+					<p><a href="">Discover beaches</a></p>
+				</div>
+				<div class="midCentreSection">
+					<img class="imgSmll" src="images\city_breaks.jpg" alt="City breaks">
+					<h3>Magical Cities</h3>
+					<p>Looking for a city getaway? Look no further, we've got some fabulous suggestions.</p>
+					<p><a href="">Discover cities to visit</a></p>
+				</div>
+				<div class="midRightSection">
+					<img class="imgSmll" src="images\winter_sunshine.jpg" alt="Winter sunshine">
+					<h3>Winter Sunshine</h3>
+					<p>If winter sun is something you're searching for, take a look at some of our options.</p>
+					<p><a href="">Discover sunny locations in winter</a></p>
+				</div>
+		</div>
+		<div class="bottomSection">
+				<div class="bottomLeftSection"><img class="imgSmll" src="images\cultural.jpg" alt="Cultural holidays">
+					<h3>Culture</h3>
+					<p>Is a cultural trip with plenty to keep you busy more your thing? Don't worry we've got some great places to suggest.</p>
+					<p><a href="">Discover cultural options</a></p>
+				</div>
+				<div class="bottomCentreSection">
+					<img class="imgSmll" src="images\wildlife_holidays.jpg" alt="Wildlife holidays">
+					<h3>Wildlife</h3>
+					<p>Does the thought of seeing animals in the wild and safaries capture your imagination. We've got plenty of options on offer.</p>
+					<p><a href="">Discover wildlife safaries</a></p>
+				</div>
+				<div class="bottomRightSection">
+					<img class="imgSmll" src="images\Mountain_skiing_holidays.jpg" alt="Mountains/Skiing Breaks">
+					<h3>Mountain/Skiing Holidays</h3>
+					<p>We've got plenty available for ski enthusiasts and those who love alpine holidays as well!</p>
+					<p><a href="">Discover mountain holidays</a></p>
+				</div>
+			</div>
+				<div class="end">
+					<div class="endSectionOne">
+						<div class="one">
+						<img class="imgTny" src="images\honeymoons.jpg" alt="Honeymoons">
+						<h3>Honeymoons</h3>
+					</div>
+						<div class="two">
+						<img class="imgTny" src="images\christmas_breaks.jpg" alt="Christmas/Festive Holidays">
+						<h3>Festive Breaks</h3>
+					 </div>
+					</div>
+					<div class="endSectionTwo">
+						<div class="three">
+						<img class="imgTny" src="images\weekend_breaks.jpg" alt="Weekend Breaks">
+						<h3>Weekend Breaks</h3>
+					</div>
+						<div class="four">
+						<img class="imgTny" src="images\family_holidays.jpg" alt="Family Holidays">
+						<h3>Family Holidays</h3>
+						</div>
+					</div>
+					<div class="endSectionThree">
+						<div class="five">
+						<img class="imgTny" src="images\northern_lights.jpg" alt="Northern Lights">
+						<h3>Northern Lights</h3>
+					</div>
+						<div class="six">
+						<img class="imgTny" src="images\adventure_holidays.jpg" alt="Adventure Holidays">
+						<h3>Adventure Breaks</h3>
+						</div>
+					</div>
+				</div>
+			<footer class="footer"><p align="center">Copyright 2021 <a href="">GWDNE</a></p></footer>
+
+</main>
+
+
+
+
+<div class="curtain"></div>
+<script src="main.js"></script>
+</body>
+</html>
